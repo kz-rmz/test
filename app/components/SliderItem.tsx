@@ -13,7 +13,7 @@ type Props = {
   isActive?: boolean;
 };
 
-const SliderItem = forwardRef((props: Props, ref: React.ForwardedRef<HTMLDivElement>) => {
+const SliderItem = forwardRef(function SliderItem(props: Props, ref: React.ForwardedRef<HTMLDivElement>) {
   return (
     <div ref={ref} className={props.className}>
       <img
